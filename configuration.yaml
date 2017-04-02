@@ -1,0 +1,57 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Casa
+  # Location required to calculate the time the sun rises and sets
+  latitude: -3.754244
+  longitude: -38.543679
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 21
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Fortaleza
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+  ip_ban_enabled: True #Flag indicating whether additional IP filtering is enabled
+  login_attempts_threshold: 5 # Number of failed login attemt from single IP after which it will be automatically banned
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+group: !include groups.yaml
