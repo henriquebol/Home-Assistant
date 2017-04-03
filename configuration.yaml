@@ -1,15 +1,10 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
-  name: Casa
-  # Location required to calculate the time the sun rises and sets
-  latitude: !secret latitude
-  longitude: !secret longitude
-  # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 21
-  # metric for Metric, imperial for Imperial
-  unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: America/Fortaleza
+  name: Casa   # Name of the location where Home Assistant is running
+  latitude: !secret latitude   # Location required to calculate the time the sun rises and sets
+  longitude: !secret longitude # Location required to calculate the time the sun rises and sets
+  elevation: 21   # Impacts weather/sunrise data (altitude above sea level in meters)
+  unit_system: metric   # metric for Metric, imperial for Imperial
+  time_zone: America/Fortaleza   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 #COMPONENTS
 #introduction: # Show links to resources in log and frontend
@@ -31,10 +26,18 @@ tts:
 
 #INCLUDES
 group: !include groups.yaml
+scene: !include scenes.yaml
 #automation: !include automation.yaml
 zone: !include zones.yaml
 sensor: !include sensors.yaml
+media_player: !include media_player.yaml
+notify: !include notify.yaml
+
 #switch: !include switches.yaml
 #device_tracker: !include device_tracker.yaml
 #known_devices: !include known_devices.yaml
 #customize: !include customize.yaml
+#input_select: !include input_select.yaml
+mqtt: !include mqtt.yaml
+#weblink: !include weblinks.yaml
+camera: !include cameras.yaml

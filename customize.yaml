@@ -1,0 +1,6 @@
+# sensor.speedtest_download:
+#   hidden: true
+# sensor.speedtest_upload:
+#   hidden: true
+# sensor.speedtest_ping:
+#   hidden: true

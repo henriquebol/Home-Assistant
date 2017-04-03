@@ -1,0 +1,35 @@
+- name: Trabalho
+  latitude: !secret work_latitude
+  longitude: !secret work_longitude
+  radius: 250
+  icon: mdi:briefcase
+
+- name: Pais (HB)
+  latitude: !secret pais_hb_latitude
+  longitude: !secret pais_hb_longitude
+  radius: 80
+  icon: mdi:home
+
+- name: Pais (LB)
+  latitude: !secret pais_lb_latitude
+  longitude: !secret pais_lb_longitude
+  radius: 80
+  icon: mdi:home
+
+# - name: Creche
+#   latitude: !secret creche_latitude
+#   longitude: !secret creche_longitude
+#   radius: 80
+#   icon: mdi:home
+
+# - name: Casa(lu)
+#   latitude: !secret home_lu_latitude
+#   longitude: !secret home_lu_longitude
+#   radius: 80
+#   icon: mdi:home
+
+# - name: Trabalho(lu)
+  # latitude: !secret work_lu_latitude
+  # longitude: !secret work_lu_longitude
+  # radius: 200
+  # icon: mdi:worker

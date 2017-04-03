@@ -1,0 +1,61 @@
+# - alias: 'Alerta de comida'
+#   trigger:
+#     platform: time
+#     hours: '/3'
+#     minutes: 0
+#     seconds: 0
+#   condition:
+#     condition: time
+#     after: '8:00'
+#     before: '23:00'
+#   action:
+#     - service: notify.henrique
+#       data:
+#         message: "Já comeu?"
+#         title: "Aviso(HB)!!!"
+#     - service: notify.lucimara
+#       data:
+#         message: "Já comeu?"
+#         title: "Aviso(HB)!!!"
+#
+# - alias: 'Henrique chegou em casa'
+#   trigger:
+#     platform: state
+#     entity_id: device_tracker.hb
+#     state: home
+#   action:
+#     service: notify.henrique
+#     data:
+#       message: "Cheguei em casa"
+#
+# - alias: 'Repelente Lucimara'
+#   trigger:
+#     platform: time
+#     hours: '/10'
+#     minutes: 0
+#     seconds: 0
+#   condition:
+#     condition: time
+#     after: '7:00'
+#     before: '0:00'
+#   action:
+#     - service: notify.lucimara
+#       data:
+#         message: "Já passou o repelente?"
+#         title: "Aviso(HB)!!!"
+#
+# - alias: 'Remédio Lucimara'
+#   trigger:
+#     platform: time
+#     hours: '/8'
+#     minutes: 20
+#     seconds: 0
+#   condition:
+#     condition: time
+#     after: '8:00'
+#     before: '1:00'
+#   action:
+#     - service: notify.lucimara
+#       data:
+#         message: "Já colocou o remédio?"
+#         title: "Aviso(HB)!!!"Mqtt

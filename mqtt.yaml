@@ -1,0 +1,18 @@
+# mqtt:
+#   broker: !secret mqtt_broker
+#   port: !secret mqtt_port
+#   username: !secret mqtt_username
+#   password: !secret mqtt_password
+#
+# device_tracker:
+#   - platform: owntracks
+#     max_gps_accuracy: 200
+#     waypoints: True
+# #   #waypoint_whitelist:
+# #   #- jon
+# #   #- ram\
+#
+# #device_tracker 2:
+# #  platform: nmap_tracker
+# #  hosts: 192.168.0.1/24
+# #  home_interval: 10

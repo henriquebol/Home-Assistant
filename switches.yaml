@@ -1,0 +1,12 @@
+- platform: command_line
+  switches:
+    playstation4:
+      command_on: 'ps4-waker'
+      command_off: 'ps4-waker standby'
+      command_state: 'telnet playstation4 9295 | grep "Connected" > nul && (echo "true") || (echo "false")'
+      value_template: '{{ value }}'
+      friendly_name: "Playstation 4"
+
+- platform: wake_on_lan
+  name: PC (HB)
+  mac_address: "00-01-02-03-04-05"

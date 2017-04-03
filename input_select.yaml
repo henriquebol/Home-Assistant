@@ -1,0 +1,10 @@
+# input_select:
+#   to_home:
+#     name: 'Tempo de trajeto até a casa'
+#     options:
+#      - Carro
+#      - Ônibus
+#      - Bike
+#      - A pé
+#     initial: Carro
+#     icon: mdi:car

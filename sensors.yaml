@@ -1,1 +1,72 @@
-platform: yr # Weather Prediction
+- platform: yr # Weather Prediction
+
+- platform: yweather
+  monitored_conditions:
+    - weather
+    - weather_current
+    - temp_min
+    - temp_max
+    - wind_speed
+    - humidity
+    - temperature
+
+- platform: speedtest
+  server_id: 6370
+  hour:
+    - 0
+    - 6
+    - 12
+    - 18
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: statistics
+  name: Download
+  entity_id: sensor.speedtest_download
+
+- platform: statistics
+  name: Upload
+  entity_id: sensor.speedtest_upload
+
+- platform: statistics
+  name: Ping
+  entity_id: sensor.speedtest_ping
+
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /home
+    - type: memory_use_percent
+    - type: processor_use
+
+# - platform: google_travel_time
+#   name: 'Henrique -> Casa (Carro)'
+#   api_key: !secret maps_key
+#   origin: device_tracker.hb_celular
+#   destination: zone.home
+#
+# - platform: google_travel_time
+#   name: 'Henrique -> Casa (Bike)'
+#   api_key: !secret maps_key
+#   origin: device_tracker.hb_celular
+#   destination: zone.home
+#   options:
+#     mode: bicycling
+#
+# - platform: google_travel_time
+#   name: 'Henrique -> Casa (A pé)'
+#   api_key: !secret maps_key
+#   origin: device_tracker.hb_celular
+#   destination: zone.home
+#   options:
+#     mode: walking
+#
+# - platform: google_travel_time
+#   name: 'Henrique -> Casa (ônibus)'
+#   api_key: !secret maps_key
+#   origin: device_tracker.hb_celular
+#   destination: zone.home
+#   options:
+#     mode: transit
