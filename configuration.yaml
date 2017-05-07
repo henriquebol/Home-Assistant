@@ -44,8 +44,8 @@ camera: !include cameras.yaml
 
 mysensors:
   gateways:
-    - device: '192.168.0.121'
-      persistence_file: '/home/hb/.homeassistant/path/mysensors3.json'
-      tcp_port: 5003
+    - device: !secret ip_gateway
+      persistence_file: !secret persistence_url
+      tcp_port: !secret port_gateway
   persistence: true
   version: 2.0
