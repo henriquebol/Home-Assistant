@@ -10,11 +10,11 @@ homeassistant:
 #introduction: # Show links to resources in log and frontend
 frontend: # Enables the frontend
 config: # Enables configuration UI
-http:
-  api_password: !secret http_password # Uncomment this to add a password (recommended!)
-  # base_url: example.duckdns.org:8123 # Uncomment this if you are using SSL or running in Docker etc
-  ip_ban_enabled: True #Flag indicating whether additional IP filtering is enabled
-  login_attempts_threshold: 5 # Number of failed login attemt from single IP after which it will be automatically banned
+# http:
+#   api_password: !secret http_password # Uncomment this to add a password (recommended!)
+#   # base_url: example.duckdns.org:8123 # Uncomment this if you are using SSL or running in Docker etc
+#   ip_ban_enabled: True #Flag indicating whether additional IP filtering is enabled
+#   login_attempts_threshold: 5 # Number of failed login attemt from single IP after which it will be automatically banned
 updater: # Checks for available updates
 discovery: # Discover some devices automatically
 conversation: # Allows you to issue voice commands from the frontend in enabled browsers
@@ -41,3 +41,11 @@ notify: !include notify.yaml
 mqtt: !include mqtt.yaml
 #weblink: !include weblinks.yaml
 camera: !include cameras.yaml
+
+mysensors:
+  gateways:
+    - device: '192.168.0.121'
+      persistence_file: '/home/hb/.homeassistant/path/mysensors3.json'
+      tcp_port: 5003
+  persistence: true
+  version: 2.0
