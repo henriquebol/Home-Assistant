@@ -1,5 +1,30 @@
-# Home-Assistant
+# MySensors
 
+[The Radio Communication (MySensors)](https://www.mysensors.org/about/network)
+
+[Gateway Raspberry (MySensors)](https://www.mysensors.org/build/raspberry)
+```
+git clone https://github.com/mysensors/MySensors.git --branch master
+cd MySensors
+./configure --my-transport=nrf24 --my-rf24-irq-pin=15 --my-gateway=ethernet --my-controller-url-address=YOUR-CONTROLLER-ADDRESS
+make
+sudo ./bin/mysgw -d
+sudo make install
+```
+```
+function detect_machine { ...
+eval "grep sunxi_platform /sys/class/sunxi_info/sys_info 2>/dev/null | sed 's/^.*: \(.*\)$/\1/'"
+...case $hardware in BCM*)...
+...soc="BCM2835"...
+```
+
+[Arduino Linux 64bits](https://www.arduino.cc/en/Main/Software)
+> RESOURCE_NAME=arduino-arduinoide
+
+[Air Humidity Sensor (MySensors)](https://www.mysensors.org/build/humidity)
+* https://github.com/henriquebol/Home-Assistant/blob/master/arduino/dht11/dht11.ino
+
+# Home-Assistant
 
 Home: http://hbo.duckdns.org:1111/states
 
@@ -78,6 +103,7 @@ Input/Command/Binary Sensor/switch
 * https://home-assistant.io/components/binary_sensor.threshold/
 * https://home-assistant.io/components/binary_sensor.trend/
 * https://home-assistant.io/components/switch.wake_on_lan/
+* https://github.com/dhleong/ps4-waker
 
 Sensor/status
 * https://home-assistant.io/components/sensor.min_max/
