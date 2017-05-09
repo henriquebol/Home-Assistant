@@ -23,6 +23,7 @@ eval "grep sunxi_platform /sys/class/sunxi_info/sys_info 2>/dev/null | sed 's/^.
 
 [Air Humidity Sensor (MySensors)](https://www.mysensors.org/build/humidity)
 * https://github.com/henriquebol/Home-Assistant/blob/master/arduino/dht11/dht11.ino
+![GitHub Logo](/arduino/dht11/arduino_nrf_dht11_ldr_battery.png)
 
 # Home-Assistant
 
