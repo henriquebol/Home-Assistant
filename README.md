@@ -35,6 +35,12 @@ MySensors: https://www.mysensors.org/build/raspberry
 
 CloudMQTT: https://cloudmqtt-api.herokuapp.com/sso/heroku/websocket
 
+### Gateway
+sudo systemctl start mysgw.service
+
+### Home Assistant
+sudo systemctl start home-assistant@homeassistant.service
+
 # Components
 
 Organization
