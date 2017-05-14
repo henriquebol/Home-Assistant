@@ -1,6 +1,38 @@
-# sensor.speedtest_download:
-#   hidden: true
-# sensor.speedtest_upload:
-#   hidden: true
-# sensor.speedtest_ping:
-#   hidden: true
+sensor.speedtest_download:
+  hidden: true
+sensor.speedtest_upload:
+  hidden: true
+sensor.speedtest_ping:
+  hidden: true
+
+sensor.cpu_use:
+  friendly_name: "Uso da CPU"
+sensor.disk_use_home:
+  friendly_name: "Uso do disco"
+sensor.ram_use:
+  friendly_name: "Uso de memória"
+
+sensor.download_mean:
+  friendly_name: "Média de download"
+sensor.upload_mean:
+  friendly_name: "Média de upload"
+sensor.ping_mean:
+  friendly_name: "Média de ping"
+
+sensor.temperatureandhumidity_1_0:
+  friendly_name: Umidade
+sensor.temperatureandhumidity_1_1:
+  friendly_name: Temperatura
+
+sun.sun:
+  friendly_name: "Posição do sol"
+  hidden: true
+sensor.yr_symbol:
+  friendly_name: "Previsão"
+
+group.all_devices:
+  friendly_name: "Nmap"
+  hidden: false
+
+device_tracker.1:
+  friendly_name: "Palio"

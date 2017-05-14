@@ -5,17 +5,20 @@ homeassistant:
   elevation: 21   # Impacts weather/sunrise data (altitude above sea level in meters)
   unit_system: metric   # metric for Metric, imperial for Imperial
   time_zone: America/Fortaleza   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  customize: !include customize.yaml
 
 #COMPONENTS
 #introduction: # Show links to resources in log and frontend
 frontend: # Enables the frontend
 config: # Enables configuration UI
-# http:
-#   api_password: !secret http_password # Uncomment this to add a password (recommended!)
-#   # base_url: example.duckdns.org:8123 # Uncomment this if you are using SSL or running in Docker etc
-#   ip_ban_enabled: True #Flag indicating whether additional IP filtering is enabled
-#   login_attempts_threshold: 5 # Number of failed login attemt from single IP after which it will be automatically banned
-updater: # Checks for available updates
+http:
+  api_password: !secret http_password # Uncomment this to add a password (recommended!)
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+  base_url: !secret base_url # Uncomment this if you are using SSL or running in Docker etc
+  ip_ban_enabled: True #Flag indicating whether additional IP filtering is enabled
+  login_attempts_threshold: 5 # Number of failed login attemt from single IP after which it will be automatically banned
+#updater: # Checks for available updates
 discovery: # Discover some devices automatically
 conversation: # Allows you to issue voice commands from the frontend in enabled browsers
 history: # Enables support for tracking state changes over time.
@@ -24,9 +27,15 @@ sun: # Track the sun
 tts:
   platform: google # Text to speech
 
+#The openweathermap weather platform uses OpenWeatherMap as an source for current meteorological data for your location.
+weather:
+  - platform: openweathermap
+    name: "Previsão do tempo"
+    api_key: !secret openweathermap_key
+
 #INCLUDES
 group: !include groups.yaml
-scene: !include scenes.yaml
+#scene: !include scenes.yaml
 #automation: !include automation.yaml
 zone: !include zones.yaml
 sensor: !include sensors.yaml
@@ -34,9 +43,8 @@ media_player: !include media_player.yaml
 notify: !include notify.yaml
 
 #switch: !include switches.yaml
-#device_tracker: !include device_tracker.yaml
+device_tracker: !include device_tracker.yaml
 #known_devices: !include known_devices.yaml
-#customize: !include customize.yaml
 #input_select: !include input_select.yaml
 mqtt: !include mqtt.yaml
 #weblink: !include weblinks.yaml

@@ -3,4 +3,6 @@
 #  access_token: 989855
 #  name: TV_Quarto
 
+- platform: cast
+
 - platform: plex

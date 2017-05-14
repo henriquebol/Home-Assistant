@@ -1,26 +1,18 @@
-# Family:
-#   - device_tracker.hb_celular
-#   - device_tracker.lu_celular
-#default_view:
-#  view: yes
-  #entities:
-  #  - device_tracker.hb_celular
-
-Trajeto:
-  - sensor.henrique__casa_carro
-  - sensor.henrique__casa_nibus
-  - sensor.henrique__casa_bike
-  - sensor.henrique__casa_a_p
-
-Tempo:
-  - sun.sun
-  - sensor.yweather_condition
-  - sensor.yweather_current
-  - sensor.yweather_humidity
-  - sensor.yweather_temperature
-  - sensor.yweather_temperature_max
-  - sensor.yweather_temperature_min
-  - sensor.yweather_wind_speed
+default_view:
+  view: yes
+  entities:
+    - weather.previsao_do_tempo
+#    - group.trajeto
+    - device_tracker.0023551816     #Henrique
+    - device_tracker.0023613236     #Lucimara
+    - device_tracker.luna
+    - device_tracker.1              #Palio
+    - device_tracker.sandero
+#Trajeto:
+#  - sensor.henrique__casa_carro
+#  - sensor.henrique__casa_nibus
+#  - sensor.henrique__casa_bike
+#  - sensor.henrique__casa_a_p
 
 Servidor:
   - sensor.download_mean
@@ -31,40 +23,40 @@ Servidor:
   - sensor.disk_use_home
   - weblink.router
 
-kitchen:
-  name: Cozinha
-  icon: mdi:food-variant
+Bedroom2:
+  name: Quarto Luna
+  icon: mdi:human-child
   view: yes
   entities:
-   - switch.kitchen_pin_3
+    - sensor.temperatureandhumidity_1_0
+    - sensor.temperatureandhumidity_1_1
+    - camera.camera_luna    
 
 Bedroom:
   name: Suite
   icon: mdi:hotel
   view: yes
+  entities:
+    - media_player.lu
 
-# default_view:
-#   view: yes
-#   entities:
-#     - updater.updater
-#     - camera.cctv_front
-#     - group.security
-#     - group.cctv_motion
-#     - group.central_heating
-#     - sensor.steriliserpower_power_4_8
-#     - sensor.energy_monitor
-#     - sensor.ups_load
-#     - sensor.ups_input_voltage
-#     - sensor.washing_machine
-#     - sensor.summerhousepower_power_15_8
-#     - binary_sensor.driveway
-#     - binary_sensor.courtyard
-#     - binary_sensor.front_pir
-#     - binary_sensor.summer_house
-#     - binary_sensor.doorbell_door
-#     - binary_sensor.doorbell_gate
-#     - group.calendar
-#
+LivingRoom:
+  name: Sala
+  icon: mdi:sofa
+  view: yes
+
+kitchen:
+  name: Cozinha
+  icon: mdi:food-variant
+  view: yes
+
+Server:
+  name: Servidor (status)
+  icon: mdi:server
+  view: yes
+  entities:
+    - group.servidor
+    - group.all_devices
+
 # Calendar:
 #   - sensor.next_calendar_event
 #   - sensor.next_calendar_event_date
