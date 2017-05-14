@@ -85,7 +85,21 @@ http:
   ssl_key: /etc/letsencrypt/live/hass-example.duckdns.org/privkey.pem
 ```
 ----------------------------------------------------------------------------------
-# Carro (TK102)
+# GPS Tracker
+
+## Pessoas
+* https://play.google.com/store/apps/details?id=com.mendhak.gpslogger
+* https://home-assistant.io/components/device_tracker.gpslogger/
+```
+# Example configuration.yaml entry
+device_tracker:
+  - platform: gpslogger
+
+Android:
+http://<ha_server>/api/gpslogger?latitude=%LAT&longitude=%LON&device=%SER&accuracy=%ACC&battery=%BATT&speed=%SPD&direction=%DIR&altitude=%ALT&provider=%PROV&activity=%ACT
+```
+
+## Carro (TK102)
 * http://hbo.duckdns.org:8082/
 
 * https://github.com/tananaev/traccar/issues/329
