@@ -86,8 +86,8 @@ http:
 ```
 ----------------------------------------------------------------------------------
 # Carro (TK102)
+* http://hbo.duckdns.org:8082/
 
-* http://gpsbo.com.br/TK103-2_Portugues_user_manual.pdf
 * https://github.com/tananaev/traccar/issues/329
 
 ```
@@ -99,7 +99,7 @@ t030s***n123456
 ```
 
 * https://www.traccar.org/
-* Traccar is a free and open source GPS tracking system for hardware and software GPS trackers.
+* Portas no router: 8082 e 5001
 
 ```
 sudo ./traccar.run
