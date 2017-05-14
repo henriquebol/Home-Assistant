@@ -88,11 +88,12 @@ http:
 # Carro (TK102)
 
 * http://gpsbo.com.br/TK103-2_Portugues_user_manual.pdf
+* https://github.com/tananaev/traccar/issues/329
 
 ```
 begin123456
 apn123456 zap.vivo.com.br vivo vivo
-adminip123456 serverip 5002
+adminip123456 serverip 5036
 gprs123456
 t030s***n123456
 ```
