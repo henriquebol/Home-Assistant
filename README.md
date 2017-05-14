@@ -93,7 +93,7 @@ http:
 ```
 begin123456
 apn123456 zap.vivo.com.br vivo vivo
-adminip123456 serverip 5036 ou 5016
+adminip123456 serverip 5001
 gprs123456
 t030s***n123456
 ```
