@@ -86,6 +86,17 @@ http:
 ```
 ----------------------------------------------------------------------------------
 # Carro (TK102)
+
+* http://gpsbo.com.br/TK103-2_Portugues_user_manual.pdf
+
+```
+begin123456
+apn123456 zap.vivo.com.br vivo vivo
+adminip123456 serverip 5002
+gprs123456
+t030s***n123456
+```
+
 * https://www.traccar.org/
 * Traccar is a free and open source GPS tracking system for hardware and software GPS trackers.
 
