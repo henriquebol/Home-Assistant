@@ -120,3 +120,9 @@ device_tracker:
    password: traccar_password
    host: traccar_host ip/name including port number
 ```
+
+ home/user/.homeassistant/custom_components/device_tracker/traccar.py
+ ```
+ #-*- coding: utf-8 -*-
+ ```
+ https://github.com/koen01/hass/blob/cd55cd0bdb84ae680d88bd4c8a20792e4637b71d/custom_components/device_tracker/traccar.py
