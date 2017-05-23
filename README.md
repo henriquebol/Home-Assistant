@@ -1,3 +1,7 @@
+# Arduino pro mini
+![GitHub Logo](http://svc.dxcdn.com/upload/reviewpicture/201601/2f9e6fbb-d550-41d1-aa3c-72cdf441b05f.jpg)
+http://www.instructables.com/id/Uploading-sketch-to-Arduino-Pro-Mini-using-Arduino/
+
 # MySensors
 
 [The Radio Communication (MySensors)](https://www.mysensors.org/about/network)
