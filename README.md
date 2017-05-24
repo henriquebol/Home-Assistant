@@ -1,7 +1,3 @@
-# Arduino pro mini
-![GitHub Logo](http://svc.dxcdn.com/upload/reviewpicture/201601/2f9e6fbb-d550-41d1-aa3c-72cdf441b05f.jpg)
-http://www.instructables.com/id/Uploading-sketch-to-Arduino-Pro-Mini-using-Arduino/
-
 # MySensors
 
 [The Radio Communication (MySensors)](https://www.mysensors.org/about/network)
@@ -28,6 +24,36 @@ eval "grep sunxi_platform /sys/class/sunxi_info/sys_info 2>/dev/null | sed 's/^.
 [Air Humidity Sensor (MySensors)](https://www.mysensors.org/build/humidity)
 * https://github.com/henriquebol/Home-Assistant/blob/master/arduino/dht11/dht11.ino
 ![GitHub Logo](/arduino/dht11/arduino_nrf_dht11_ldr_battery.png)
+
+----------------------------------------------------------------------------------
+# Arduino pro mini
+![GitHub Logo](http://svc.dxcdn.com/upload/reviewpicture/201601/2f9e6fbb-d550-41d1-aa3c-72cdf441b05f.jpg)
+http://www.instructables.com/id/Uploading-sketch-to-Arduino-Pro-Mini-using-Arduino/
+
+## babyBOX
+
+Arduino Pro Mini para (5V / 16MHz)
+* 3.3V~12V DC
+
+NRF24L01
+* 1.9-3.6V
+* As the transmit mode, the transmit power is 6dBm, the current is 9.0mA, the accepted mode current is 12.3mA, the current consumption of the power-down mode and standby mode are lower
+
+DHT11
+* 3,0 a 5,0 VDC (5,5 Vdc máximo)
+* 200uA a 500mA, em standby de 100uA a 150 uA
+
+KY-037 
+* 5v DC
+
+Regulador de Tensão 3.3V AMS1117
+* Entrada: DC 4.5~7V;
+* Saída: DC 3.3V +/- 0.05V;
+* Corrente máxima: 800mA;
+
+LDR
+* 5V or 3.3V
+* 0.5 mA.
 
 ----------------------------------------------------------------------------------
 # Home-Assistant
