@@ -34,6 +34,7 @@ http://www.instructables.com/id/Uploading-sketch-to-Arduino-Pro-Mini-using-Ardui
 
 Arduino Pro Mini para (5V / 16MHz)
 * 3.3V~12V DC
+* 5mA
 
 NRF24L01
 * 1.9-3.6V
