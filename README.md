@@ -39,13 +39,30 @@ Arduino Pro Mini para (5V / 16MHz)
 NRF24L01
 * 1.9-3.6V
 * As the transmit mode, the transmit power is 6dBm, the current is 9.0mA, the accepted mode current is 12.3mA, the current consumption of the power-down mode and standby mode are lower
+* Pro Mini      NRF24L01+ Color
+* GND	          GND	      Black
+* 5VReg -> 3.3V	VCC	      Red
+* 9	            CE	      Orange
+* 10	          CSN/CS	  Yellow
+* 13	          SCK	      Green
+* 11	          MOSI	    Blue
+* 12	          MISO	    Violet
+* 2	            IRQ	      Gray
 
 DHT11
 * 3,0 a 5,0 VDC (5,5 Vdc máximo)
 * 200uA a 500mA, em standby de 100uA a 150 uA
+* Pin + to Arduino Vcc
+* Pin - to Arduino Gnd
+* Pin data to Arduino A3 (for analog program)
 
 KY-037 
 * 5v DC
+* Pin + to Arduino Vcc
+* Pin - to Arduino Gnd
+* Pin A0 to Arduino A0 (for analog program)
+* Pin D0 to Arduino 13 (for digital program)
+
 
 Regulador de Tensão 3.3V AMS1117
 * Entrada: DC 4.5~7V;
@@ -55,7 +72,17 @@ Regulador de Tensão 3.3V AMS1117
 LDR
 * 5V or 3.3V
 * 0.5 mA.
+* Resistor 10k (+)
+* Pino A1
 
+
+Buzzer
+* 5V or (3.3V)
+* Pino D5 (PWM)
+* Resistor 66 Ohm (+)
+* https://github.com/keithgardner2/sweetChild
+* https://www.youtube.com/watch?v=vJMvCEaOpyw
+* http://www.instructables.com/id/How-to-easily-play-music-with-buzzer-on-arduino-Th/
 ----------------------------------------------------------------------------------
 # Home-Assistant
 
