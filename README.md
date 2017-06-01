@@ -1,3 +1,38 @@
+# Funcionalidades
+* Casa
+  - Rastrear pessoas e veículos;
+  - Previsão do tempo;
+  - Aviso do próximo compromisso no google agenda:
+    - Alerta no celular avisando a hora de sair;
+    - Maps e streetview do local.
+
+* Quarto 1
+  - Câmera ip;
+  - Tempo até o hospital;
+  - Temperatura, umidade e luminosidade:
+    - Alerta no celular se temperatura menor que 24 e maior que 30 graus;
+    - Alerta se umidade menor que 20%;
+    - Alerta se luminosidade maior que 90% de dia e 20% a noite;
+  - Alerta no celular se o bebê chorar.
+  
+* Quarto 2
+  - Tv LG e Chromecast:
+    - Controle e amostra do que está sendo visto;
+    - Envio de notificações.
+
+* Sala
+  - Ligar ps4.
+   
+* Cozinha
+  - Lista de compras:
+    - Aviso no celular dos itens faltantes toda sexta pela manhã.
+    
+* Server
+  - Links;
+  - Estatisticas do servidor;
+  - Nmap.
+
+--------------------------------------------------------------------------------------
 # MySensors
 
 [The Radio Communication (MySensors)](https://www.mysensors.org/about/network)
