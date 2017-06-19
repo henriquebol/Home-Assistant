@@ -67,6 +67,9 @@ http://www.instructables.com/id/Uploading-sketch-to-Arduino-Pro-Mini-using-Ardui
 
 ## babyBOX
 
+* https://github.com/henriquebol/Home-Assistant/blob/master/arduino/babybox.fzz
+![GitHub Logo](/arduino/babybox_Esquemático.png)
+
 Arduino Pro Mini para (5V / 16MHz)
 * 3.3V~12V DC
 * 5mA
